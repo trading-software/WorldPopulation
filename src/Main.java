@@ -18,7 +18,6 @@ public class Main {
                 previousPopulationStr += populationDivided[i];
             }
 
-
             BigInteger previous = new BigInteger(previousPopulationStr);
             int maxGainYear = 0;
             BigInteger maxGain = new BigInteger("0");
@@ -30,7 +29,6 @@ public class Main {
                     maxGainYear = i;
                 }
 
-
                 previous = population;
 
             }
@@ -39,8 +37,6 @@ public class Main {
         } catch (FileNotFoundException exception) {
             exception.printStackTrace();
         }
-
-
     }
 
     public static BigInteger getPopulation(String line) {
@@ -50,7 +46,6 @@ public class Main {
         for (int i = 0; i < populationDivided.length; i++) {
             previousPopulationStr += populationDivided[i];
         }
-
 
         return new BigInteger(previousPopulationStr);
     }
